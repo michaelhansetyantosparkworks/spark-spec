@@ -34,9 +34,11 @@ Pod::Spec.new do |s|
   s.source_files = 'Testlib/Classes/**/*'
   s.swift_version = '5.1'
   
-  s.resource_bundles = {
-    'Testlib' => ['Testlib/Assets/*.storyboard']
-  }
+  s.resources = 'Testlib/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}'
+  
+  #s.resource_bundles = {
+  #  'Testlib' => ['Testlib/Assets/*.storyboard']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
